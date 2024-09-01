@@ -197,7 +197,6 @@ buildNumber.properties
 ### Waterfall Extras ###
 Waterfall-Proxy/
 run/
-Waterfall/
 
 # Bauantibotsentryproxy
 Bauantibotsentryproxy-proxy/
