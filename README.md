@@ -1,5 +1,4 @@
 # Bauantibotsentryproxy
-=========
 
 Bauantibotsentryproxy es un fork de [Waterfall](https://github.com/PaperMC/Waterfall).
 
