@@ -191,13 +191,24 @@ buildNumber.properties
 .mvn/timing.properties
 
 # Exclude maven wrapper
-!/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.jar
 
 
 ### Waterfall Extras ###
-Waterfall-Proxy/
-run/
+/Waterfall-Proxy
+/run
+/Waterfall
 
-# Because Github lost their minds
-.idea/
+# Bauantibotsentryproxy
+/Bauantibotsentryproxy-proxy
+
+# intellij
+*.ipr
+/.idea/
 *.iml
+out/
+logs/
+config.yml
+waterfall.yml
+modules
+plugins
