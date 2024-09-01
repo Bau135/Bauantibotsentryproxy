@@ -1,0 +1,803 @@
+From 058ce1cb0fc175ecb9e9ac294d2146683a7036b1 Mon Sep 17 00:00:00 2001
+From: Bau <bau@bau.lol>
+Date: Wed, 28 Aug 2024 20:50:23 -0300
+Subject: [PATCH] POM Changes
+
+
+diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
+index a108e30..5c50f45 100644
+--- a/bootstrap/pom.xml
++++ b/bootstrap/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-bootstrap</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-bootstrap</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Bootstrap</name>
+-    <description>Java 1.6 loader for Waterfall</description>
++    <name>Bauantibotsentryproxy-Bootstrap</name>
++    <description>Java 1.6 loader for Bauantibotsentryproxy</description>
+ 
+     <properties>
+         <maven.deploy.skip>true</maven.deploy.skip>
+@@ -29,15 +29,15 @@
+ 
+     <dependencies>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-proxy</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-proxy</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+     </dependencies>
+ 
+     <build>
+-        <finalName>Waterfall</finalName>
++        <finalName>Bauantibotsentryproxy</finalName>
+         <plugins>
+             <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+diff --git a/chat/pom.xml b/chat/pom.xml
+index 7db6020..8b3233f 100644
+--- a/chat/pom.xml
++++ b/chat/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
+     <artifactId>waterfall-chat</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Chat</name>
++    <name>Bauantibotsentryproxy-Chat</name>
+     <description>Minecraft JSON chat API intended for use with Waterfall</description>
+ 
+     <dependencies>
+diff --git a/config/pom.xml b/config/pom.xml
+index d245a60..20dcf9f 100644
+--- a/config/pom.xml
++++ b/config/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-config</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-config</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Config</name>
+-    <description>Generic java configuration API intended for use with Waterfall</description>
++    <name>Bauantibotsentryproxy-Config</name>
++    <description>Generic java configuration API intended for use with Bauantibotsentryproxy</description>
+ 
+     <dependencies>
+         <dependency>
+diff --git a/event/pom.xml b/event/pom.xml
+index 2ac455c..1a08d4d 100644
+--- a/event/pom.xml
++++ b/event/pom.xml
+@@ -4,17 +4,17 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-event</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-event</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Event</name>
+-    <description>Generic java event dispatching API intended for use with Waterfall.</description>
++    <name>Bauantibotsentryproxy-Event</name>
++    <description>Generic java event dispatching API intended for use with Bauantibotsentryproxy.</description>
+ </project>
+diff --git a/log/pom.xml b/log/pom.xml
+index 3851e6c..0b63a7a 100644
+--- a/log/pom.xml
++++ b/log/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-log</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-log</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Log</name>
+-    <description>Simplistic and performant java.util.Logger based logger and console API designed for use with Waterfall and Minecraft related applications.</description>
++    <name>Bauantibotsentryproxy-Log</name>
++    <description>Simplistic and performant java.util.Logger based logger and console API designed for use with Bauantibotsentryproxy and Minecraft related applications.</description>
+ 
+     <dependencies>
+         <dependency>
+@@ -26,8 +26,8 @@
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-chat</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-chat</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/log4j/pom.xml b/log4j/pom.xml
+index 81b360e..e9e24b7 100644
+--- a/log4j/pom.xml
++++ b/log4j/pom.xml
+@@ -3,19 +3,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-log4j</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-log4j</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Log4J</name>
+-    <description>Simplistic and performant Log4j2 based logger and console API designed for use with Waterfall and Minecraft related applications.</description>
++    <name>Bauantibotsentryproxy-Log4J</name>
++    <description>Simplistic and performant Log4j2 based logger and console API designed for use with Bauantibotsentryproxy and Minecraft related applications.</description>
+ 
+     <properties>
+         <log4j2.version>2.20.0</log4j2.version>
+diff --git a/module/cmd-alert/pom.xml b/module/cmd-alert/pom.xml
+index 07b901a..b003ed3 100644
+--- a/module/cmd-alert/pom.xml
++++ b/module/cmd-alert/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-module</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-alert</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-module-cmd-alert</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-find/pom.xml b/module/cmd-find/pom.xml
+index e3a8a06..68f011e 100644
+--- a/module/cmd-find/pom.xml
++++ b/module/cmd-find/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-module</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-find</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-module-cmd-find</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-list/pom.xml b/module/cmd-list/pom.xml
+index 933fc3e..c89f228 100644
+--- a/module/cmd-list/pom.xml
++++ b/module/cmd-list/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-module</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-list</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-module-cmd-list</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-send/pom.xml b/module/cmd-send/pom.xml
+index 6b3e2e8..25ed1e9 100644
+--- a/module/cmd-send/pom.xml
++++ b/module/cmd-send/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-module</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-send</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-module-cmd-send</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-server/pom.xml b/module/cmd-server/pom.xml
+index 45cca07..aed0960 100644
+--- a/module/cmd-server/pom.xml
++++ b/module/cmd-server/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-module</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-server</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-module-cmd-server</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/pom.xml b/module/pom.xml
+index b946e1b..8c40434 100644
+--- a/module/pom.xml
++++ b/module/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-module</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>pom</packaging>
+ 
+-    <name>Waterfall Modules</name>
+-    <description>Parent project for all Waterfall modules.</description>
++    <name>Bauantibotsentryproxy Modules</name>
++    <description>Parent project for all Bauantibotsentryproxy modules.</description>
+ 
+     <modules>
+         <module>cmd-alert</module>
+@@ -29,15 +29,15 @@
+     </modules>
+ 
+     <properties>
+-        <module.author>WaterfallMC</module.author>
++        <module.author>Bauantibotsentryproxy</module.author>
+         <maven.deploy.skip>true</maven.deploy.skip>
+         <maven.javadoc.skip>true</maven.javadoc.skip>
+     </properties>
+ 
+     <dependencies>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-api</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-api</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/native/mbedtls b/native/mbedtls
+deleted file mode 160000
+index 2ca6c28..0000000
+--- a/native/mbedtls
++++ /dev/null
+@@ -1 +0,0 @@
+-Subproject commit 2ca6c285a0dd3f33982dd57299012dacab1ff206
+diff --git a/native/pom.xml b/native/pom.xml
+index 49347e1..e3b5bc5 100644
+--- a/native/pom.xml
++++ b/native/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-native</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-native</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Native</name>
+-    <description>Optional native code to speed up and enhance Waterfall functionality.</description>
++    <name>Bauantibotsentryproxy-Native</name>
++    <description>Optional native code to speed up and enhance Bauantibotsentryproxy functionality.</description>
+ 
+     <dependencies>
+         <dependency>
+diff --git a/native/zlib b/native/zlib
+deleted file mode 160000
+index 9253056..0000000
+--- a/native/zlib
++++ /dev/null
+@@ -1 +0,0 @@
+-Subproject commit 92530568d2c128b4432467b76a3b54d93d6350bd
+diff --git a/pom.xml b/pom.xml
+index be640f9..3ab39d5 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -3,18 +3,18 @@
+          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+     <modelVersion>4.0.0</modelVersion>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-parent</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-parent</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>pom</packaging>
+ 
+-    <name>Waterfall-Parent</name>
+-    <description>Parent project for all Waterfall modules.</description>
+-    <url>https://github.com/WaterfallMC/Waterfall</url>
+-    <inceptionYear>2015</inceptionYear>
++    <name>Bauantibotsentryproxy-Parent</name>
++    <description>Parent project for all Bauantibotsentryproxy modules.</description>
++    <url>https://github.com/Bau135/Bauantibotsentryproxy</url>
++    <inceptionYear>2023</inceptionYear>
+     <organization>
+-        <name>WaterfallMC</name>
+-        <url>https://github.com/WaterfallMC</url>
++        <name>Bau135</name>
++        <url>https://github.com/Bau135</url>
+     </organization>
+     <licenses>
+         <license>
+@@ -26,19 +26,7 @@
+ 
+     <developers>
+         <developer>
+-            <id>Tux</id>
+-        </developer>
+-        <developer>
+-            <id>Techcable</id>
+-        </developer>
+-        <developer>
+-            <id>kashike</id>
+-        </developer>
+-        <developer>
+-            <id>jamierocks</id>
+-        </developer>
+-        <developer>
+-            <id>fuzzybot</id>
++            <id>Bau</id>
+         </developer>
+     </developers>
+ 
+@@ -59,23 +47,23 @@
+     </modules>
+ 
+     <scm>
+-        <connection>scm:git:git@github.com:com:WaterfallMC/Waterfall.git</connection>
+-        <developerConnection>scm:git:git@github.com:WaterfallMC/Waterfall.git</developerConnection>
+-        <url>git@github.com:WaterfallMC/Waterfall.git</url>
++        <connection>scm:git:git@github.com:com:Bau135/Bauantibotsentryproxy.git</connection>
++        <developerConnection>scm:git:git@github.com:Bau135/Bauantibotsentryproxy.git</developerConnection>
++        <url>git@github.com:Bau135/Bauantibotsentryproxy.git</url>
+     </scm>
+     <issueManagement>
+         <system>GitHub</system>
+-        <url>https://github.com/PaperMC/Waterfall/issues</url>
++        <url>https://github.com/Bau135/Bauantibotsentryproxy/issues</url>
+     </issueManagement>
+ 
+     <distributionManagement>
+         <repository>
+-            <id>papermc-releases</id>
+-            <url>https://papermc.io/repo/repository/maven-releases/</url>
++            <id>bauantibotsentryproxy-releases</id>
++            <url>https://github.com/Bau135/Bauantibotsentryproxy/releases</url>
+         </repository>
+         <snapshotRepository>
+-            <id>papermc-snapshots</id>
+-            <url>https://papermc.io/repo/repository/maven-snapshots/</url>
++            <id>bauantibotsentryproxy-snapshots</id>
++            <url>https://github.com/Bau135/Bauantibotsentryproxy/actions</url>
+         </snapshotRepository>
+     </distributionManagement>
+ 
+diff --git a/protocol/pom.xml b/protocol/pom.xml
+index b85d275..ed0da7d 100644
+--- a/protocol/pom.xml
++++ b/protocol/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-protocol</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-protocol</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Protocol</name>
+-    <description>Minimal implementation of the Minecraft protocol for use in Waterfall</description>
++    <name>Bauantibotsentryproxy-Protocol</name>
++    <description>Minimal implementation of the Minecraft protocol for use in Bauantibotsentryproxy</description>
+ 
+     <!-- We really shouldn't depend on external repositories -->
+     <repositories>
+@@ -35,8 +35,8 @@
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-chat</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-chat</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/proxy/pom.xml b/proxy/pom.xml
+index c3b1ff9..2be81fa 100644
+--- a/proxy/pom.xml
++++ b/proxy/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-proxy</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-proxy</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Proxy</name>
++    <name>Bauantibotsentryproxy-Proxy</name>
+     <description>Proxy component of the Elastic Portal Suite</description>
+ 
+     <properties>
+@@ -76,32 +76,32 @@
+             <classifier>linux-aarch_64</classifier>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-api</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-api</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-log4j</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-log4j</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-native</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-native</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-protocol</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-protocol</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-query</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-query</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/query/pom.xml b/query/pom.xml
+index 5e1b0ac..4bb207b 100644
+--- a/query/pom.xml
++++ b/query/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-query</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-query</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Query</name>
+-    <description>Minecraft query implementation based on the Waterfall API.</description>
++    <name>Bauantibotsentryproxy-Query</name>
++    <description>Minecraft query implementation based on the Bauantibotsentryproxy API.</description>
+ 
+     <dependencies>
+         <dependency>
+@@ -25,8 +25,8 @@
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-api</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-api</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/slf4j/pom.xml b/slf4j/pom.xml
+index 8860998..35191db 100644
+--- a/slf4j/pom.xml
++++ b/slf4j/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-slf4j</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-slf4j</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-SLF4J</name>
++    <name>Bauantibotsentryproxy-SLF4J</name>
+     <description>Wrapper over SLF4J for BungeeCord purposes.</description>
+ 
+     <properties>
+diff --git a/api/pom.xml b/api/pom.xml
+index 00537b6..44906ef 100644
+--- a/api/pom.xml
++++ b/api/pom.xml
+@@ -4,42 +4,42 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-parent</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-api</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-api</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-API</name>
++    <name>Bauantibotsentryproxy-API</name>
+     <description>API implemented by the Elastic Portal Suite</description>
+ 
+     <dependencies>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-chat</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-chat</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-config</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-config</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-event</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-event</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-protocol</artifactId>
++            <groupId>io.bau135.bauantibotsentryproxy</groupId>
++            <artifactId>bauantibotsentryproxy-protocol</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/module/reconnect-yaml/pom.xml b/module/reconnect-yaml/pom.xml
+index 66e8e0b..e6b5b57 100644
+--- a/module/reconnect-yaml/pom.xml
++++ b/module/reconnect-yaml/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-module</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-reconnect-yaml</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-module-reconnect-yaml</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+
+diff --git a/module/cmd-kick/pom.xml b/module/cmd-kick/pom.xml
+index 3a45cb5..faa42a8 100644
+--- a/module/cmd-kick/pom.xml
++++ b/module/cmd-kick/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>io.bau135.bauantibotsentryproxy</groupId>
++        <artifactId>bauantibotsentryproxy-module</artifactId>
+         <version>1.21-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-kick</artifactId>
++    <groupId>io.bau135.bauantibotsentryproxy</groupId>
++    <artifactId>bauantibotsentryproxy-module-cmd-kick</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+
+diff --git a/chat/pom.xml b/chat/pom.xml
+index 8b3233f..a5f6851 100644
+--- a/chat/pom.xml
++++ b/chat/pom.xml
+@@ -11,7 +11,7 @@
+     </parent>
+ 
+     <groupId>io.bau135.bauantibotsentryproxy</groupId>
+-    <artifactId>waterfall-chat</artifactId>
++    <artifactId>bauantibotsentryproxy-chat</artifactId>
+     <version>1.21-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+

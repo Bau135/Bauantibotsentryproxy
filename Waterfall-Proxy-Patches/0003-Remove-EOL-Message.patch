@@ -1,0 +1,22 @@
+From 168aca2c4cae1c77efbbd156345ead5234c113ab Mon Sep 17 00:00:00 2001
+From: Bau <bau@bau.lol>
+Date: Sat, 31 Aug 2024 20:04:12 -0300
+Subject: [PATCH] Remove EOL Message
+
+
+diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java b/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
+index 72d6a15..7758c50 100644
+--- a/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
++++ b/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
+@@ -63,8 +63,7 @@
+ 
+         BungeeCord bungee = new BungeeCord();
+         ProxyServer.setInstance( bungee );
+-        bungee.getLogger().info( "Enabled Waterfall version " + bungee.getVersion() );
+-        bungee.getLogger().warning("Waterfall has reached end of life and is no longer maintained. We recommend you transition to Velocity (https://papermc.io/software/velocity). For more information, see the announcement (https://forums.papermc.io/threads/1088/)."); // Waterfall - eol message
++        bungee.getLogger().info( "Enabled Bauantibotsentryproxy version " + bungee.getVersion() );
+         bungee.start();
+ 
+         if ( !options.has( "noconsole" ) )
+
+

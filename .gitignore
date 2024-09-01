@@ -198,6 +198,16 @@ buildNumber.properties
 Waterfall-Proxy/
 run/
 
-# Because Github lost their minds
+# Bauantibotsentryproxy
+Bauantibotsentryproxy-proxy/
+
+# intellij
+*.ipr
 .idea/
 *.iml
+out/
+logs/
+config.yml
+waterfall.yml
+modules
+plugins

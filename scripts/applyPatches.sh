@@ -60,8 +60,14 @@ if [[ "$gpgsign" == "true" ]]; then
     git config --global commit.gpgsign false
 fi
 
-
-# Apply patches
+# Apply waterfall patches
+basedir=$basedir/Waterfall
+pushd Waterfall
 applyPatch BungeeCord Waterfall-Proxy HEAD
+popd
+basedir=$(dirname $basedir)
+
+# Apply Bauantibotsentryproxy patches
+applyPatch Waterfall/Waterfall-Proxy Bauantibotsentryproxy-proxy HEAD
 
 enableCommitSigningIfNeeded
