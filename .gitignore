@@ -195,16 +195,16 @@ buildNumber.properties
 
 
 ### Waterfall Extras ###
-/Waterfall-Proxy
-/run
-/Waterfall
+Waterfall-Proxy/
+run/
+Waterfall/
 
 # Bauantibotsentryproxy
-/Bauantibotsentryproxy-proxy
+Bauantibotsentryproxy-proxy/
 
 # intellij
 *.ipr
-/.idea/
+.idea/
 *.iml
 out/
 logs/
